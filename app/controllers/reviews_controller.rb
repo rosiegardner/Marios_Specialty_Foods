@@ -43,6 +43,10 @@ class ReviewsController < ApplicationController
     @review.destroy
     redirect_to product_path(@review.product)
   end
-
+  
+  private
+    def review_params
+      params.require(:review).permit(:author, :content_body)
+    end
 
 end
