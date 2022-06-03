@@ -3,8 +3,18 @@
 <%= form_for [@product, @review] do |f| %>
   <%= f.label :author %>
   <%= f.text_field :author %>
-  <%= f.label :rating %>
-  <%= f.text_area :rating %>
+  <br>
+  <%= f.radio_button :rating, '1' %>
+  <%= f.label :rating, '☆', value: '1' %>
+  <%= f.radio_button :rating, '2' %>
+  <%= f.label :rating, '☆', value: '2' %>
+  <%= f.radio_button :rating, '3' %>
+  <%= f.label :rating, '☆', value: '3' %>
+  <%= f.radio_button :rating, '4' %>
+  <%= f.label :rating, '☆', value: '4' %>
+  <%= f.radio_button :rating, '5' %>
+  <%= f.label :rating, '☆', value: '5' %>
+  <br>
   <%= f.label :content_body %>
   <%= f.text_area :content_body %>
   <p><%= f.submit %></p>
