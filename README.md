@@ -13,11 +13,13 @@
 * Gem
 * Rspec
 * HTML
-* BOOTSTRAP
+* Bootstrap
+* Sass
+* Will_Paginate
 * Capybara
 * Shoulda-Matchers
-* Bootstrap
-* Will_Paginate
+* Active Record
+
 
 ## Setup/Installation Requirements
 
