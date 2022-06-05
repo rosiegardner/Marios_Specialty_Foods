@@ -1,16 +1,27 @@
-<h1>Mario's Specialty Food Products</h1>
+<div class="jumbotron">
+  <div class="container">
+    <h1>Mario's Specialty Food Products</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <h2>Our Products</h2>
 
-<h2>Our Products</h2>
-<% if @products.any? %>
-  <ul>
-    <% @products.each do |product| %>
-      <li><%= link_to product.name, product_path(product) %></li>
-    <% end %>
-  </ul>
-<% else %>
-  <p>There are no products yet.</p>
-<% end %>
-
-<%= will_paginate @post,renderer: BootstrapPagination::Rails %>
-<p><%= link_to "Create new product", new_product_path %></p>
-<p><%= link_to "Return to homepage", home_path %></p>
+      <% if @products.any? %>
+        <ul>
+          <% @products.each do |product| %>
+            <li><%= link_to product.name, product_path(product) %></li>
+          <% end %>
+        </ul>
+      <% else %>
+        <p>There are no products yet.</p>
+      <% end %>
+    </div>
+    <div class="col-lg-6">
+    <%= will_paginate @post,renderer: BootstrapPagination::Rails %>
+    <p><%= link_to "Create new product", new_product_path, class: "btn btn-default" %></p>
+    <p><%= link_to "Return to homepage", home_path, class: "btn btn-default" %></p>  
+    </div>
+  </div>
+</div>
