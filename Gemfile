@@ -41,6 +41,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # sass & bootstrap
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+gem 'will_paginate-bootstrap'
 
 # faker gem
 gem 'faker'
