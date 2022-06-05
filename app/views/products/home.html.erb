@@ -1,0 +1,40 @@
+<h1>Mario's Specialty Food Products</h1>
+<br>
+<p>A place for taste and shopping for buds!</p>
+
+<h2>Recently added products!</h2>
+<% if @three_most_recent.any? %>
+  <ul>
+    <% @three_most_recent.each do |product| %>
+      <li><%= link_to product.name, product_path(product) %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no products yet.</p>
+<% end %>
+
+<h2>Products from American Soil!</h2>
+
+<% if @usa_product.any? %>
+  <ul>
+    <% @usa_product.each do |product| %>
+      <li><%= link_to product.name, product_path(product) %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no products yet.</p>
+<% end %>
+
+<h2>Products with the Most Reviews!</h2>
+<% if @most_reviewed.any? %>
+  <ul>
+    <% @most_reviewed.each do |product| %>
+      <li><%= link_to product.name, product_path(product) %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no products yet.</p>
+<% end %>
+
+
+<p><%= link_to "View all products", products_path %></p>
