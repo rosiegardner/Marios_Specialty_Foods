@@ -1,5 +1,6 @@
-<h1>Products</h1>
+<h1>Mario's Specialty Food Products</h1>
 
+<h2>Our Products</h2>
 <% if @products.any? %>
   <ul>
     <% @products.each do |product| %>
@@ -10,6 +11,6 @@
   <p>There are no products yet.</p>
 <% end %>
 
-
+<%= will_paginate @post,renderer: BootstrapPagination::Rails %>
 <p><%= link_to "Create new product", new_product_path %></p>
 <p><%= link_to "Return to homepage", home_path %></p>
