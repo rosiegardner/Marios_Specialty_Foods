@@ -12,10 +12,12 @@
     </div>
     <br>
     <div class="col-lg-6">
-    <p><%= link_to "Edit edit", edit_product_review_path(@product, @review), class: "btn btn-default" %></p>
-    <p><%= link_to "Delete review", product_review_path(@product, @review),
-                                  :data => {:confirm => "Are you sure?",
-                                                :method => "delete"}, class: "btn btn-default" %></p>
+    <% if is_admin? %>
+      <p><%= link_to "Edit review", edit_product_review_path(@product, @review), class: "btn btn-default" %></p>
+      <p><%= link_to "Delete review", product_review_path(@product, @review),
+                                    :data => {:confirm => "Are you sure?",
+                                                  :method => "delete"}, class: "btn btn-default" %></p>
+    <% end %>
     <p><%= link_to "Return to product", product_path(@product), class: "btn btn-default" %></p>
     <p><%= link_to "Return to homepage", home_path, class: "btn btn-default" %></p>
     </div>
