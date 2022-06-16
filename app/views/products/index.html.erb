@@ -20,7 +20,9 @@
     </div>
     <div class="col-lg-6">
     <%= will_paginate @products,renderer: BootstrapPagination::Rails %>
-    <p><%= link_to "Create new product", new_product_path, class: "btn btn-default" %></p>
+    <% if current_user && current_user.admin %>
+      <p><%= link_to "Create new product", new_product_path, class: "btn btn-default" %></p>
+    <% end %>
     <p><%= link_to "Return to homepage", home_path, class: "btn btn-default" %></p>  
     </div>
   </div>
