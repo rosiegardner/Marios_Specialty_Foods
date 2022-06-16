@@ -1,4 +1,7 @@
 class ProductsController < ApplicationController
+  before_action :only => [:new, :edit, :create, :update, :destroy] do
+    redirect_to new_user_session_path unless current_user && current_user.admin
+  end
 
   def index
     @products = Product.all.paginate(:page=>params[:page],per_page:10)
