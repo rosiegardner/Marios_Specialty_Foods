@@ -27,10 +27,12 @@
     <div class="col-lg-6">
     <%= will_paginate @reviews,renderer: BootstrapPagination::Rails %>
     <p><%= link_to "Add a review", new_product_review_path(@product), class: "btn btn-default" %></p>
-    <p><%= link_to "Edit", edit_product_path(@product), class: "btn btn-default" %></p>
-    <p><%= link_to "Delete", product_path(@product),
-                            :data => {:confirm => "You sure?",
-                                      :method => "delete"}, class: "btn btn-default" %></p>
+    <% if is_admin? %>
+      <p><%= link_to "Edit", edit_product_path(@product), class: "btn btn-default" %></p>
+      <p><%= link_to "Delete", product_path(@product),
+                              :data => {:confirm => "You sure?",
+                                        :method => "delete"}, class: "btn btn-default" %></p>
+    <% end %>
     <p><%= link_to "Return to products", products_path, class: "btn btn-default" %></p>
     <p><%= link_to "Return to homepage", home_path, class: "btn btn-default" %></p>  
     </div>
