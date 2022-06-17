@@ -26,7 +26,9 @@
     </div>
     <div class="col-lg-6">
     <%= will_paginate @reviews,renderer: BootstrapPagination::Rails %>
-    <p><%= link_to "Add a review", new_product_review_path(@product), class: "btn btn-default" %></p>
+    <% if user_signed_in?%>
+      <p><%= link_to "Add a review", new_product_review_path(@product), class: "btn btn-default" %></p>
+    <% end %>
     <% if is_admin? %>
       <p><%= link_to "Edit", edit_product_path(@product), class: "btn btn-default" %></p>
       <p><%= link_to "Delete", product_path(@product),
