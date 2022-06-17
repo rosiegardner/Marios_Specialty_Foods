@@ -10,12 +10,12 @@
     <div class="col-lg-6">
 
       <% if @reviews.any? %>
-        <h4>Here are the reviews for this product:</h4>
+        <h4>Click on Author name to view their product review:</h4>
 
         <% @reviews.each do |review| %>
           <ul>
             <li>
-              <%= link_to review.content_body, product_review_path(@product, review) %>
+              <p><%= link_to review.author, product_review_path(@product, review) %> - <%= review.rating %> ☆'s</p>
             </li>
           </ul>
         <% end %>
