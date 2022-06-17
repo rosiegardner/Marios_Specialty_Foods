@@ -12,12 +12,12 @@
   <body>
 
   <% if current_user %>   
-      <%= current_user.email %>   <%= link_to "Sign out", destroy_user_session_path, :method => :delete %> 
+      <%= current_user.email %>   <%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "btn btn-default" %> 
     <% else %>   
       <p>You are not signed in.</p>   
-      <%= link_to "Sign Up!", new_user_registration_path %>  
+      <%= link_to "Sign Up!", new_user_registration_path, class: "btn btn-default" %>  
       <br />  
-      <%= link_to "Login", new_user_session_path %> 
+      <%= link_to "Login", new_user_session_path, class: "btn btn-default" %> 
   <% end %>
   
   <%= flash[:alert] %>
