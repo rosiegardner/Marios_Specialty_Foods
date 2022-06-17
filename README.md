@@ -50,7 +50,7 @@
 
 ## Behavior Driven Development / User Stories
 
-# User
+#### User
 1) A user can sign-up / sign-in / sign-out.
 2) A user can view products.
 3) A user can view and add reviews to products.
@@ -58,7 +58,7 @@
 5) A user can see the three most recently added products.
 6) A user who is not signed in will only be allowed reading priveleges.
 
-# Admin
+#### Admin
 1) An admin can sign-up / sign-in / sign-out.
 2) An admin can view products.
 3) An admin can view product reviews.
