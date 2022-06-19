@@ -22,6 +22,7 @@
 * Devise
 * Simplecov
 * RailsAdmin
+* Kaminari
 
 
 ## Setup/Installation Requirements
