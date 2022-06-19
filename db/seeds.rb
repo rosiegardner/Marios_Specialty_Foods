@@ -8,7 +8,10 @@
 
 Product.destroy_all
 Review.destroy_all
+User.destroy_all
 
+marios_admin = User.create!(:email => 'mariosadmin@food.com', :password => 'mariosfoodadmin123', :admin => true)
+marios_user = User.create!(:email => 'mariosuser@food.com', :password => 'mariosfooduser456')
 product_id_array = []
 50.times do |index|
   Product.create!(name: Faker::Food.fruits, cost: Faker::Number.between(from: 1, to: 10,), country_of_origin: Faker::Address.country)
