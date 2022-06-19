@@ -635,8 +635,80 @@
           null
         ]
       },
+      "/Users/rosie/Desktop/rails_mario_foods/config/initializers/kaminari.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/rosie/Desktop/rails_mario_foods/config/initializers/mime_types.rb": {
         "lines": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/rosie/Desktop/rails_mario_foods/config/initializers/rails_admin.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
           null,
           null,
           null,
@@ -663,6 +735,7 @@
       },
       "/Users/rosie/Desktop/rails_mario_foods/config/routes.rb": {
         "lines": [
+          1,
           1,
           1,
           1,
@@ -700,7 +773,7 @@
         "lines": [
           1,
           1,
-          10,
+          44,
           null,
           null
         ]
@@ -1048,6 +1121,6 @@
         ]
       }
     },
-    "timestamp": 1655497520
+    "timestamp": 1655622436
   }
 }
