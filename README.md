@@ -28,7 +28,7 @@
 ## Setup/Installation Requirements
 
 * https://github.com/rosiegardner/Marios_Specialty_Foods.git
-* Clone of download this repository onto your desktop
+* Clone or download this repository onto your desktop
 * Navigate to the top-level of directory
 * Open VScode.
 * CD into root directory and bundle install project
