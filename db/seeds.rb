@@ -15,12 +15,9 @@ marios_user = User.create!(:email => 'mariosuser@food.com', :password => 'marios
 product_id_array = []
 50.times do |index|
   Product.create!(name: Faker::Food.fruits, cost: Faker::Number.between(from: 1, to: 10,), country_of_origin: Faker::Address.country)
-  product_id_array.push(Product.last.id)
-  product_id_array.each do |r_index|
     5.times do |index|
-      Review.create!(author: Faker::Name.name, rating: Faker::Number.between(from: 1, to: 5), content_body: Faker::Hipster.paragraph_by_chars(characters: 250, supplemental: false), product_id: r_index)
+      Review.create!(author: Faker::Name.name, rating: Faker::Number.between(from: 1, to: 5), content_body: Faker::Hipster.paragraph_by_chars(characters: 250, supplemental: false), product_id: Product.last.id)
     end
-  end
 end
 
 p product_id_array
