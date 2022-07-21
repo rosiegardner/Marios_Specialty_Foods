@@ -39,8 +39,7 @@
 * `rake db:seed`
 * `bundle install`
 * `rails s`
-* In web browser
-* `http://localhost:3000`
+* In web browser: `http://localhost:3000`
 * Create account to view user priviledges.
 * To become an admin, open the rails console using text editor of your choice:
 * `rails c`
